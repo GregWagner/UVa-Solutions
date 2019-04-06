@@ -1,0 +1,6 @@
+For rook and queen it is the minimum of ( row, column).
+
+For knight - picture the board as a grid consisting of black and white colours
+and count the number of black or white squares.
+
+For king - do the same thing as knight but skip the alternate row.

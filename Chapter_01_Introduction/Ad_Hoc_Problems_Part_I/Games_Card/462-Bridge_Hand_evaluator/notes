@@ -1,0 +1,62 @@
+1) Ace     4 points
+   King    3 points
+   Queen   2 points
+   Jack    1 point
+
+2) -1 point for any king of a suit which the hand
+    hold no other cards
+3) -1 for any queen in a suit which the hand holds only
+    zero or one other cards
+4) -1 for any jack in a suit in which the hand only hold
+    zero or one or two other cards
+
+5) +1 for each suit which the hand contains 2 cards
+6) +2 for each suit in which the hand contains 1 card
+7) +2 for each suit which the hand contains 0 cards
+
+Suit is stopped if
+    it contains an ace
+    it contains a king and at least 1 other card
+    it contains a queen and at least 3 other cards
+
+The 3 most common possibilies during opening assesment is
+1) the hand evaluates to < 14 point - pass
+2) the hand evalatates to >= 14 points. Bidding opened in one of the 
+    suits with the most cards
+3) open bidding in "no trump" if hand evaluates to >= 16 points
+    ignoring rules 5, 6, and 7 and all 4 suites are stopped. A no
+    trump bid is always preferred over a suit bid when both possible
+
+            step 2  step 3
+KS QS       0       2 -1
+TH 8H 4H    -       -
+AC QC TC 5C -       4 0
+KD QD JD 8D 0       4 0
+
+0   Clubs
+1   Spades
+2   Hearts
+3   Diamonds
+
+KS QS TH 8H 4H AC QC TC 5C KD QD JD 8D
+6 points for 2 kings
+4 points for an ace
+6 points for 3 queens
+1 for a jack
+17 points + 1 for having only 2 spades - 1 for having a queen of spades
+with only one other spade = 17 points (i.e. opening bid)
+For no trump, it is 16 points since we cannout count the 1 point for 
+having only 2 spades, but cannot open no-trump since hearts are not stopped
+Since there are 4 clubs and 4 diamonds BID C or BID D (sort order S H D C)
+
+AC 3 C 4C AS 7S 4S AD TD 7D 5D AH 7H 5H 
+
+
+
+
+2C  6C AC
+JH  5H
+KD  3D AD 9D 2D
+3S  4S 5S
+
+AC

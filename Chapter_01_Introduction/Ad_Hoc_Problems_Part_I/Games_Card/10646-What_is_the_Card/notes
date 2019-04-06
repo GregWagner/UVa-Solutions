@@ -1,0 +1,16 @@
+Split into top 25 and bottom 27
+
+Top card of bottom 27 is AH
+AH value is 10 so Y = 10. Discard AH
+10-10 = 0 so no more cards are discarded
+
+Next card is 2D
+2D value is 2 so Y = 12. Discard 2D
+10-2 = 8 so remove next 8 cards
+
+Next card is JD
+JD value is 10 so y = 22. Discard JD
+10-10 = 0 so no more cards are discarded
+
+Take the top 25 cards and place on top of pile
+the 22nd card from the bottom is 8H

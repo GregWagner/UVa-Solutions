@@ -1,0 +1,22 @@
+each month
+    loan payment reduces amount owed
+        car depreciates (specified as % of previous months value)
+        What month does buer ow less money than car is workd
+
+        Loan duration (in months)       30
+        down payment                500.0
+        amount of loan              15000
+# of depreviation record        3
+                                0   .10
+                                1-2 .03
+                                3   .002
+
+Borrows 15000 for 30 months 
+car worth 15,000 + 500
+paymment = 15000 / 30 = 500
+month   owes        worth
+0       15,000      15,500 - (15,500 * .1) = 15.500 - 1,550 = 13,950
+1       14,500      13,950 - (13,950 * .03) = 13,950 - 418.5 = 13,531.5
+2       14,000      13,531.5 - (13,531.5 * .03) = 13,531.5 - 405.945 = 13,125.555 
+3       13,500      13,125.555 - (13,125.555 * .002) = 13,125.555 - 13,099.30389
+4       13,000      13,099.30389 - (13,099.30389 * .002) = 13,099.30389 - 26.198 = 13,073.10528

@@ -1,0 +1,39 @@
+78 card deck - composed with 21 trump cards (1-21) and a special card (fool) 
+	with 4 suites (spades, hearts, diamonds, clubs)
+Each suite has 14 cards (ace, two,... ten, jack, knight, queen, king
+
+3 cards have special status (oudlers)
+	fool
+	1 of trups
+	21 of trups
+
+Biddig Phase
+Choose one player as takers
+
+Main phase
+players play tricks and try to win as many cards as possible
+Outcome determined by # of points won by taker which is the sum of the values
+of the cards won by the taker. The value that the taker needs to achieve depends
+on the # of oudlers he won
+	# of oudlers		points needed
+	3			36
+	2			41
+	1			51
+	0			56
+
+Card values
+	King and oudlers	4.5
+	Queens			3.5
+	Jacks			1.5
+	All others		0.5
+
+For example, taker won 4 cards (2 oudlers so he needs 41 points)
+Ace of spades			0.5
+Eight of diamonds		0.5
+Fool				4.5
+21 of trups			4.5
+				10 < 41 lost
+
+
+
+

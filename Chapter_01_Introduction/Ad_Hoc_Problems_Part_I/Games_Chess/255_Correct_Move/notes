@@ -1,0 +1,90 @@
+17, 49
+7, 0            Illegal move (move not 'x' - it is .)
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+17, 49
+1, 1            Illegal move (move not 'x' - it is 'o')
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+17, 49
+2, 1            Illegal move (move not 'x' - it is 'K')
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+17, 49
+3, 1            Move not allowed (move is '-')
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+17, 49
+4, 1            Continue
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+17, 49
+5, 1            Contine
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+17, 49
+6, 1            Illegal move (it is not 'x' - it is 'Q')
+. . . . . . . . 
+. o . . . . . . 
+o K o . . . . . 
+. - . . . . . . 
+. x . . . . . . 
+. x . . . . . . 
+x Q x x x x x x 
+. x . . . . . . 
+
+56, 48
+6, 1            Stop
+x . . . . . . . 
+x . . . . . . . 
+x . . . . . . . 
+x . . . . . . . 
+x . . . . . . . 
+x . . . . . . . 
+Q x x x x x x x 
+K o . . . . . . 
+
+Illegal state
+Illegal move
