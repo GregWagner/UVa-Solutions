@@ -1,20 +1,21 @@
 /*
- * Problem 12577 - Hajj-e-Akbar
+ * UVa 12577 - Hajj-e-Akbar
+ * Straightforward
  */
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
-    int test {1};
-
-    std::string input;
-    while (std::cin >> input && input != "*") {
-        output << "Case " << test++ << ": Hajj-e-"
-            << (input == "Hajj" ? "Akbar" : "Asghar") << '\n';
-    }
-    std::cout << output.str();
+  std::ostringstream output;
+  std::string input {};
+  int test {1};
+  while (std::cin >> input && input != "*") {
+    output << "Case " << test++ << ": Hajj-e-"
+      << (input == "Hajj" ? "Akbar\n" : "Asghar\n");
+  }
+  std::cout << output.str();
 }
