@@ -1,29 +1,34 @@
 /*
- * Problem 12250 - Language Detection
+ * UVa 12250 - Language Detection
+ * if-else check
  */
 #include <iostream>
 #include <sstream>
-#include <map>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
-    std::map<std::string, std::string> dict;
-
-    dict["HELLO"] = "ENGLISH";
-    dict["HOLA"] = "SPANISH";
-    dict["HALLO"] = "GERMAN";
-    dict["BONJOUR"] = "FRENCH";
-    dict["CIAO"] = "ITALIAN";
-    dict["ZDRAVSTVUJTE"] = "RUSSIAN";
-
-    std::string input;
-    int test {1};
-    while (std::cin >> input && input != "#") {
-        output << "Case " << test++ << ": "
-            << (dict.count(input) ? dict[input] : "UNKNOWN") << '\n';
+  std::ostringstream output;
+  int testCase {1};
+  std::string input {};
+  while (std::cin >> input && input != "#") {
+    if (input == "HELLO") {
+      output << "Case " << testCase++ << ": ENGLISH\n";
+    } else if (input == "HOLA") {
+      output << "Case " << testCase++ << ": SPANISH\n";
+    } else if (input == "HALLO") {
+      output << "Case " << testCase++ << ": GERMAN\n";
+    } else if (input == "BONJOUR") {
+      output << "Case " << testCase++ << ": FRENCH\n";
+    } else if (input == "CIAO") {
+      output << "Case " << testCase++ << ": ITALIAN\n";
+    } else if (input == "ZDRAVSTVUJTE") {
+      output << "Case " << testCase++ << ": RUSSIAN\n";
+    } else {
+      output << "Case " << testCase++ << ": UNKNOWN\n";
     }
-    std::cout << output.str();
+  }
+  std::cout << output.str();
 }
