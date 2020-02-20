@@ -1,23 +1,23 @@
 /*
- * Problem 11547 -Automatic Answer
+ * UVa 11547 - Automatic Answer
+ * A One liner O(1) solution exists
  */
 #include <iostream>
 #include <sstream>
+#include <cmath>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
-
-    int testCases;
-    std::cin >> testCases;
-    while (testCases--) {
-        int input;
-        std::cin >> input;
-        output << 
-            std::abs(((((input * 63) + 7492) * 5) - 498)) % 100 / 10 << '\n';
-    }
-
-    std::cout << output.str();
+  std::ostringstream output;
+  int testCases {};
+  std::cin >> testCases;
+  while (testCases--) {
+    int n {};
+    std::cin >> n;
+    output << std::abs(((((n * 63) + 7492) * 5) - 498) % 100 / 10) << '\n';
+  }
+  std::cout << output.str();
 }
