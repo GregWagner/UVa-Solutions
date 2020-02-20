@@ -1,29 +1,30 @@
 /*
- * Problem 11364 - Optimal Parking
+ * UVa 11364 - Parking
+ * Linear scan to get l & r, answer = 2 * (r - l)
  */
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
+  std::ostringstream output;
+  int testCases {};
+  std::cin >> testCases;
+  while (testCases--) {
+    int storesToVisit {};
+    std::cin >> storesToVisit;
 
-    int testCases;
-    std::cin >> testCases;
-    while (testCases--) {
-        int numberOfStores;
-        std::cin >> numberOfStores;
-
-        int first {1000}, last {};
-        for (int i {0}; i < numberOfStores; ++i) {
-            int store;
-            std::cin >> store;
-            first = std::min(store, first);
-            last = std::max(store, last);
-        }
-        output << (last - first) * 2 << '\n';
+    int min {1000}, max {};
+    int input {};
+    for (int i {}; i < storesToVisit; ++i) {
+      std::cin >> input;
+      min = std::min(min, input);
+      max = std::max(max, input);
     }
-    std::cout << output.str();
+    output << 2 * (max - min) << '\n';
+  }
+  std::cout << output.str();
 }
