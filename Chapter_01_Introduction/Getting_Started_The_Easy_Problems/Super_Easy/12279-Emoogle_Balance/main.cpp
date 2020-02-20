@@ -1,24 +1,26 @@
 /*
- * Problem 12279 - Emoogle Balance
+ * UVa 12279 - Emoogle Balance
+ * Simple linear scan
  */
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
-    int test {1};
-    int testCases;
-    while (std::cin >> testCases && testCases != 0) {
-        int balance {};
-        for (int i = 0; i < testCases; ++i) {
-            int temp;
-            std::cin >> temp;
-            balance += (temp ? 1 : -1);
-        }
-        output << "Case " << test++ << ": " << balance << '\n';
+  std::ostringstream output;
+  int testCase {1};
+  int n {};
+  while (std::cin >> n && n != 0) {
+    int balance {};
+    for (int i {}; i < n; ++i) {
+      int input {};
+      std::cin >> input;
+      balance += (input ? 1 : -1);
     }
-    std::cout << output.str();
+    output << "Case " << testCase++ << ": " << balance << '\n';
+  }
+  std::cout << output.str();
 }
