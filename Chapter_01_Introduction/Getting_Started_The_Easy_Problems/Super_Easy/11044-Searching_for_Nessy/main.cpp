@@ -1,21 +1,23 @@
 /*
- * Problem 11044 - Searching for Nessy
+ * UVa 11044 - Searching for Nessy
+ * One liner code/formula exists
  */
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
+  std::ostringstream output;
 
-    int testCases;
-    std::cin >> testCases;
-    while (testCases--) {
-        int n, m;
-        std::cin >> n >> m;
-        output << (n / 3) * (m / 3) << '\n';
-    }
-    std::cout << output.str();
+  int testCases {}, n {}, m {};
+  std::cin >> testCases;
+  while (testCases--) {
+    std::cin >> n >> m;
+    output << ((n / 3) * (m / 3)) << '\n';
+  }
+
+  std::cout << output.str();
 }
