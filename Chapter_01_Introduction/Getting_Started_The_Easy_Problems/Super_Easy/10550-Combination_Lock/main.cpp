@@ -1,40 +1,41 @@
 /*
- * Problem 10550 - Combination Lock
+ * UVa 10550 - Combination Lock
+ * Simple, do as asked.
  */
 #include <iostream>
 #include <sstream>
 
-int countTicks(int a, int b) {
-    int ticks {a - b};
-    return (ticks < 0 ? ticks + 40 : ticks);
-}
+int main()
+{
+  const int DEGREES_PER_TICK {9};
+  const int EXTRA_TURNS {120};
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    constexpr int DEGREES_PER_TICK {9};
-    constexpr int EXTRA_TURNS {1080};
+  std::ostringstream output;
+  int count {};
 
-    std::ostringstream output;
-    while (true) {
-        int start, a, b, c;
-        std::cin >> start >> a >> b >> c;
-        if (start == 0 && a == 0 && b == 0 && c == 0) {
-            break;
-        }
-
-        // first turn counterclockwis
-        int totalTicks {countTicks(start, a)};
-
-        // second turn clockwise
-        totalTicks += countTicks(b, a);
-
-        // thrid turn counterclockwise
-        totalTicks += countTicks(b, c);
-
-        // convert ticks to degrees and add in the constant extra turns
-        output << (EXTRA_TURNS + (DEGREES_PER_TICK * totalTicks)) << '\n';
+  int initial {}, first {}, second {}, third{};
+  while (true) {
+    std::cin >> initial >> first >> second >> third;
+    if (initial == 0 && first == 0 && second == 0 && third == 0) {
+      break;
     }
-    std::cout << output.str();
+
+    count = EXTRA_TURNS;
+
+    // stop at first number
+    count += (initial - first > 0 ? initial - first : initial + (40 - first));
+
+    // counter clockwise to second number
+    count += (second - first > 0 ? second - first : second + (40 - first));
+    
+    // clockwise to thrid number
+    count += (second - third > 0 ? second - third : second + (40 - third));
+
+    output << count * DEGREES_PER_TICK  << '\n';
+  }
+
+  std::cout << output.str();
 }
