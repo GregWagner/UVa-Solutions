@@ -1,29 +1,29 @@
 /*
- * Problem 272 - TeX Quotes
- *
- * Replaces the first quote with `` and the second with ''
+ * UVa 00272 - TEX Quotes
+ * Replace all double quotes to TEX() style quotes)
  */
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
-    std::string input;
+  std::string input {};
+  std::ostringstream output;
 
-    bool start {true};
-    while (std::getline(std::cin, input)) {
-        for (auto c : input) {
-            if (c == '"') {
-                output << (start ? "``" : "''");
-                start = !start;
-            } else {
-                output << c;
-            }
-        }
-        output << '\n';
+  bool first {true};
+  while (std::getline(std::cin, input)) {
+    for (auto c : input) {
+      if (c == '\"') {
+        output << (first ? "``" : "''");
+        first = !first;
+      } else {
+        output << c;
+      }
     }
-    std::cout << output.str();
+    output << '\n';
+  }
+  std::cout << output.str();
 }
