@@ -1,28 +1,23 @@
 /*
- * Problem 11172 Relational Operator
- *
- * Take in 2 numbers and output the relation that is appropriate
- * for the given numbers.
+ * UVa 11172 - Relational Operators
+ * Ad hoc - very easy, one liner
  */
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
+int main()
+{
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
 
-    std::ostringstream output;
+  std::ostringstream output;
+  int testCases {}, a {}, b {};
+  std::cin >> testCases;
+  while (testCases--) {
+    std::cin >> a >> b;
+    output << (a == b ? '=' :
+      (a > b ? '>' : '<')) << '\n';
+  }
 
-    int testCases;
-    std::cin >> testCases;
-    while (testCases--) {
-        int a, b;
-        std::cin >> a >> b;
-        if (a == b) {
-            output << "=\n";
-        } else {
-            output << (a < b ? '<' : '>') << '\n';
-        }
-    }
-    std::cout << output.str();
+  std::cout << output.str();
 }
