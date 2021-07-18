@@ -60,6 +60,5 @@ int main() {
                 break;
         }
     }
-
     std::cout << output.str();
 }
