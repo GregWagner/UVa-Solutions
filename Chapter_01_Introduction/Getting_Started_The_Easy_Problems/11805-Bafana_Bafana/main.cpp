@@ -2,19 +2,24 @@
 #include <sstream>
 
 int main() {
-    std::cin.tie(nullptr);
     std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
 
     std::ostringstream output;
-    int test { 1 };
-    int testCases {};
-    std::cin >> testCases;
-    while (testCases--) {
-        int n, k, p;
-        std::cin >> n >> k >> p;
-        int lastPlayer = (k + p) % n;
-        output << "Case " << test++ << ": "
-               << (lastPlayer == 0 ? n : lastPlayer) << '\n';
+
+    int test {};
+    int test_cases {};
+    std::cin >> test_cases;
+    while (test_cases--) {
+        int number_of_players {};
+        int starting_player {};
+        int number_of_passes {};
+        std::cin >> number_of_players >> starting_player >> number_of_passes;
+
+        int final_position = (starting_player + number_of_passes) % number_of_players;
+        output << "Case " << ++test << ": "
+            << (final_position == 0 ? number_of_players : final_position) << '\n';
     }
     std::cout << output.str();
 }
