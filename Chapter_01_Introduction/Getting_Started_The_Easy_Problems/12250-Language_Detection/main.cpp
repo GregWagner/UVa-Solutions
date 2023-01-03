@@ -1,32 +1,27 @@
-/*
- * 12250 Language Detection
- */
 #include <iostream>
 #include <sstream>
 #include <unordered_map>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
-    std::unordered_map<std::string, std::string> hash {
+    std::ostringstream output;
+    std::unordered_map<std::string, std::string> m {
         {"HELLO", "ENGLISH"},
         {"HOLA", "SPANISH"},
         {"HALLO", "GERMAN"},
         {"BONJOUR", "FRENCH"},
         {"CIAO", "ITALIAN"},
-        {"ZDRAVSTVUJTE", "RUSSIAN"},
+        {"ZDRAVSTVUJTE", "RUSSIAN"}
     };
 
-    std::ostringstream output;
+    int test_case {};
     std::string input;
-    int testCase {};
-    while (std::cin >> input) {
-        if (input == "#") {
-            break;
-        }
-        output << "Case " << ++testCase << ": " << 
-            (hash.count(input) == 0 ? "UNKNOWN" : hash[input]) << '\n';
+    while (std::cin >> input && input != "#") {
+        output << "Case " << ++test_case << ": " << 
+            (m.count(input) == 0 ? "UNKNOWN" : m[input]) << '\n';
     }
     std::cout << output.str();
 }

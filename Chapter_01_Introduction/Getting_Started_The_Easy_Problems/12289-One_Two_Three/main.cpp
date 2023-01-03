@@ -1,35 +1,32 @@
-/*
- * 12289 One-Two-Three
- */
 #include <iostream>
 #include <sstream>
 
+bool is_one(const std::string &s) {
+    if (s[0] == 'o' && (s[1] == 'n' || s[2] == 'e')) {
+        return true;
+    }
+    if (s[1] == 'n' && (s[0] == 'o' || s[2] == 'e')) {
+        return true;
+    }
+    return false;
+}
+
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int testCases {};
-    std::cin >> testCases;
-    while (testCases-- != 0) {
-        std::string s;
-        std::cin >> s;
-        if (s.size() == 5) {
+
+    int n {};
+    std::cin >> n;
+    while (n--) {
+        std::string input;
+        std::cin >> input;
+        if (input.size() != 3) {
             output << "3\n";
-        } else if (s[0] == 'o') {
-            if (s[1] == 'n' || s[2] == 'e') {
-                output << "1\n";
-            } 
-        } else if (s[1] == 'n') {
-            if (s[0] == 'o' || s[2] == 'e') {
-                output << "1\n";
-            } 
-        } else if (s[3] == 'e') {
-            if (s[0] == 'o' || s[1] == 'n') {
-                output << "1\n";
-            } 
         } else {
-            output << "2\n";
+            output << (is_one(input) ? "1\n" : "2\n");
         }
     }
     std::cout << output.str();

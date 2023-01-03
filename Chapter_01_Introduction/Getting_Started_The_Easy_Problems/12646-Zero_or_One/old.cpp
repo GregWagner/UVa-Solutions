@@ -1,23 +1,24 @@
+/*
+ * 12646 - Zero or One
+ */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
     std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
     std::ostringstream output;
-
-    int a{}, b{}, c{};
+    int a, b, c;
     while (std::cin >> a >> b >> c) {
-        if (a == b && b == c) {
-            output << "*\n";
-        } else if (b == c) {
+        if (a != b && a != c) {
             output << "A\n";
-        } else if (a == c) {
+        } else if (b != a && b != c) {
             output << "B\n";
-        } else {
+        } else if (c != a && c != b) {
             output << "C\n";
+        } else {
+            output << "*\n";
         }
     }
     std::cout << output.str();

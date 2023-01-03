@@ -1,22 +1,19 @@
-/*
- * 11547 Automatiic Answer
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
+    std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
 
     std::ostringstream output;
-
-    int testCases {};
-    std::cin >> testCases;
-    while (testCases-- != 0) {
+    int test_cases {};
+    std::cin >> test_cases;
+    while (test_cases--) {
         int n {};
         std::cin >> n;
-        n = std::abs((((n * 63) + 7492) * 5) - 498);
-        output << n % 100 / 10 << '\n';
+        int64_t answer = (((n * 63) + 7492) * 5) - 498;
+        output << std::abs(answer % 100) / 10 << '\n';
     }
 
     std::cout << output.str();

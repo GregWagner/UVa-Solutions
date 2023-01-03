@@ -1,28 +1,25 @@
-/*
- * 12468 Zapping
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int a {};
-    int b {};
-    while (std::cin >> a >> b && a != -1 && b != -1) {
-        int min {101};
-        int change = std::abs(b - a);
-        min = std::min(min, change);
 
-        change = std::abs(100 - a + b);
-        min = std::min(min, change);
-
-        change = std::abs(100 - b + a);
-        min = std::min(min, change);
-
-        output << min << '\n';
+    int current {};
+    int desired {};
+    while (std::cin >> current >> desired && current != -1 && desired != -1) {
+        int button_presses {};
+        if (current < desired) {
+            button_presses = std::min(desired - current,
+                current + 100 - desired);
+        } else {
+            button_presses = std::min(current - desired,
+                desired + 100 - current);
+        }
+        output << button_presses << '\n';
     }
     std::cout << output.str();
 }

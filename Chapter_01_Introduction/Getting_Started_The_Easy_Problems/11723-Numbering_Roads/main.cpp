@@ -1,30 +1,26 @@
-/*
- * 11723 Numbering Roads
- */
 #include <iostream>
 #include <sstream>
-#include <cmath>
 
 int main() {
-    std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int numberOfRoads {};
-    int numberOfInts {};
-    int testCase {};
-    while (std::cin >> numberOfRoads >> numberOfInts && numberOfRoads != 0 && numberOfInts != 0) {
-        output << "Case " << ++testCase << ": ";
-            int x = std::ceil(numberOfRoads / numberOfInts);
-            if (x <= 26) {
-                if (numberOfRoads % numberOfInts == 0) {
-                    output << x - 1 << '\n';
-                } else if (x <= 26) {
-                    output << x << '\n';
-                }
-            } else {
-                output << "impossible\n";
-            }
+
+    int number_of_streets {};
+    int number_of_integers {};
+    int test_case {1};
+    while (std::cin >> number_of_streets >> number_of_integers && number_of_streets != 0 && number_of_integers != 0) {
+        int answer {number_of_streets / number_of_integers};
+        if (answer * number_of_integers == number_of_streets) {
+            --answer;
+        }
+        if (answer <= 26) {
+            output << "Case " << test_case++ << ": " << answer << '\n';
+        } else {
+            output << "Case " << test_case++ << ": impossible\n";
+        }
     }
     std::cout << output.str();
 }
