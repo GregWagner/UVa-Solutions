@@ -1,28 +1,27 @@
-/*
- * 11364 Parking
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int testCases {};
-    std::cin >> testCases;
-    while (testCases-- != 0) {
-        int minStore {100};
-        int maxStore {-1};
-        int numberOfStores {};
-        std::cin >> numberOfStores;
-        while (numberOfStores-- != 0) {
+
+    int n {};
+    std::cin >> n;
+    while (n--) {
+        int first {200};
+        int last {-1};
+        int number_of_stores {};
+        std::cin >> number_of_stores;
+        while (number_of_stores--) {
             int store {};
             std::cin >> store;
-            minStore = std::min(store, minStore);
-            maxStore = std::max(store, maxStore);
+            first = std::min(first, store);
+            last = std::max(last, store);
         }
-        output << 2 * (maxStore - minStore) << '\n';
+        output << (2 * (last - first)) << '\n';
     }
     std::cout << output.str();
 }

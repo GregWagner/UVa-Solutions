@@ -1,27 +1,25 @@
-/*
- * 11799 Horror Dash
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int testCase {};
-    int testCases {};
-    std::cin >> testCases;
-    while (testCases-- != 0) {
-        int clownSpeed = {};
-        int numberOfStudents {};
-        std::cin >> numberOfStudents;
-        while (numberOfStudents-- != 0) {
-            int speed {};
-            std::cin >> speed;
-            clownSpeed = std::max(clownSpeed, speed);
+    int test_case {};
+    int test;
+    std::cin >> test;
+    while (test--) {
+        int speed {};
+        int n {};
+        std::cin >> n;
+        while (n--) {
+            int input;
+            std::cin >> input;
+            speed = std::max(speed, input);
         }
-        output << "Case " << ++testCase << ": " << clownSpeed << '\n';
+        output << "Case " << ++test_case << ": " << speed << '\n';
     }
     std::cout << output.str();
 }

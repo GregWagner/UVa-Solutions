@@ -1,25 +1,24 @@
-/*
- * 12279 Emoogle Balance
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
+    int test_case {};
 
-    int testCase {};
-    int numberOfEvents {};
-    while (std::cin >> numberOfEvents && numberOfEvents != 0) {
-        int score {};
-        for (int i {}; i < numberOfEvents; ++i) {
+    int n {};
+    while (std::cin >> n && n != 0) {
+        int balance {};
+        for (int i {}; i < n; ++i) {
             int input {};
             std::cin >> input;
-            input == 0 ? --score : ++score;
+            input == 0 ? --balance : ++balance;
         }
-        output << "Case " << ++testCase << ": " << score << '\n';
+        std::cout << "Case " << ++test_case << ": " << balance << '\n';
     }
+
     std::cout << output.str();
 }

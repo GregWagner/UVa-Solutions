@@ -2,25 +2,25 @@
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int testCases {};
-    std::cin >> testCases;
-    int testCase {};
-    while (testCases--) {
-        bool valid {true};
+    int test_case {};
+    int problem_sets {};
+    std::cin >> problem_sets;
+    while (problem_sets--) {
+        bool has_zero {};
         for (int i {}; i < 13; ++i) {
-            int temp;
-            std::cin >> temp;
-            if (temp == 0) {
-                valid = false;
+            int input {};
+            std::cin >> input;
+            if (input == 0) {
+                has_zero = true;
             }
         }
-        output << "Set #" << ++testCase << ": ";
-        output << (valid ? "Yes" : "No") << '\n';
+        output << "Set #" << ++test_case << ": "
+            << (has_zero ? "No" : "Yes") << '\n';
     }
     std::cout << output.str();
 }

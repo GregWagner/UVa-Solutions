@@ -1,26 +1,24 @@
-/*
- * 12403 Save Setu
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int numberOfOperations {};
-    std::cin >> numberOfOperations;
+    int n {};
+    std::cin >> n;
     int money {};
-    while (numberOfOperations--) {
-        std::string s;
-        std::cin >> s;
-        if (s == "donate") {
-            int amount {};
-            std::cin >> amount;
-            money += amount;
-        } else {
+    while (n--) {
+        std::string input;
+        std::cin >> input;
+        if (input == "report") {
             output << money << '\n';
+        } else {
+            int donation {};
+            std::cin >> donation;
+            money += donation;
         }
     }
     std::cout << output.str();

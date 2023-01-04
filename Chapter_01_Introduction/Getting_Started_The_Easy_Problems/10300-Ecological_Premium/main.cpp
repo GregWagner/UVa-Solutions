@@ -1,29 +1,27 @@
-/*
- * Ecological Premium
- */
 #include <iostream>
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int testCases {};
-    std::cin >> testCases;
-    while (testCases-- != 0) {
-        int numberOfFarmers {};
-        std::cin >> numberOfFarmers;
+
+    int n {};
+    std::cin >> n;
+    while (n--) {
         int budget {};
-        for (int i {}; i < numberOfFarmers; ++i) {
+        int number_of_farmers {};
+        std::cin >> number_of_farmers;
+        while (number_of_farmers--) {
             int size {};
-            int numberOfAnimals {};
+            int number_of_animals {};
             int friendliness {};
-            std::cin >> size >> numberOfAnimals >> friendliness;
-            budget += friendliness * size;
+            std::cin >> size >> number_of_animals >> friendliness;
+            budget += size * friendliness;
         }
         output << budget << '\n';
     }
-
     std::cout << output.str();
 }

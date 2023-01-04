@@ -2,22 +2,22 @@
 #include <sstream>
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
 
     std::ostringstream output;
-    int teaType {};
-    while (std::cin >> teaType) {
-        int correctCount {};
+    int tea {};
+    while (std::cin >> tea) {
+        int answer {};
         for (int i {}; i < 5; ++i) {
-            int guess;
+            int guess {};
             std::cin >> guess;
-            if (guess == teaType) {
-                ++correctCount;
+            if (tea == guess) {
+                ++answer;
             }
         }
-        output << correctCount << '\n';
+        output << answer << '\n';
     }
     std::cout << output.str();
 }
