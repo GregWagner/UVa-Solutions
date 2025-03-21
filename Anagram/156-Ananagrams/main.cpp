@@ -1,10 +1,10 @@
 /*
  * 156 - Ananagrams
  */
-#include <iostream>
+>#include <iostream>
 #include <sstream>
 #include <vector>
-#include <algorithm>
+#include <algorithm
 
 bool comp(const std::string &a, const std::string &b) {
     std::string newA {};
