@@ -1,0 +1,17 @@
+I am solving UVA problem xxx.
+
+Here is the complete statement:
+[paste statement]
+
+Do not write code yet.
+
+First provide:
+1. A precise restatement of the input and output.
+2. The important constraints and integer bounds.
+3. The algorithmic observation.
+4. A proof or justification of correctness.
+5. Time and memory complexity.
+6. UVA-specific input/output pitfalls.
+7. Three edge cases that could break a naive solution.
+
+Wait for my approval before implementing.

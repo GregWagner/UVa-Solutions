@@ -1,0 +1,8 @@
+Once the plan is correct, switch back to Build mode and say:
+
+Implement the approved plan in main.cpp.
+
+Use C++17.
+Keep the solution self-contained.
+Do not add comments that merely restate the code.
+Do not print anything except the required answer.

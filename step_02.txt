@@ -1,0 +1,12 @@
+Ask for a plan before allowing edits
+Press Tab to switch to Plan mode, then ask:
+
+Create a solution plan for this problem. Do not modify files.
+
+The plan must include:
+- algorithm,
+- data structures,
+- overflow risks,
+- handling of multiple test cases,
+- exact output format,
+- a testing strategy.

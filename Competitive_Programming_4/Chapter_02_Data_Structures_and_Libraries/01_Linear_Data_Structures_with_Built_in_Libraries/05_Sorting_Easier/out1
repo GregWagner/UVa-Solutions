@@ -1,0 +1,18 @@
+Rows: 5, Columns: 2
+12345678.123        mid_size_name
+2short4me           much_longer_name
+mid_size_name       shorter
+much_longer_name    size-1
+shorter             size2
+------------------------------------------------------------
+Rows: 3, Columns: 4
+Alfalfa       Darla         P.D.          
+Buckwheat     Froggy        Porky
+Butch         Joe           Stimey
+------------------------------------------------------------
+Rows: 4, Columns: 5
+Alice      Cindy      Keith      Peter
+Bobby      Danny      Lori       Ruben
+Buffy      Greg       Marsha     Shirley
+Carol      Jan        Mike       Sissy
+------------------------------------------------------------

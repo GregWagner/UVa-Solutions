@@ -1,0 +1,5 @@
+Compile main.cpp with:
+
+g++ -std=c++17 -Wall -Wextra -pedantic -O2 main.cpp -o main
+
+Then run it using sample.in. If compilation fails, explain the error and fix only the necessary code.
