@@ -21,7 +21,7 @@ int r[7][7] = { {4, 4, 4, 4, 4, 4, 4},
     {4, 5, 6, 7, 8, 9, 9},
     {4, 5, 6, 7, 8, 9, 10}};
 
-int main()
+auto main() -> int
 {
     std::ios::sync_with_stdio(false);
     std::ostringstream output;

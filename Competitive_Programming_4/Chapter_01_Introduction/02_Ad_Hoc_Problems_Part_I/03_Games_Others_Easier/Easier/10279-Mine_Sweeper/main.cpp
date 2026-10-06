@@ -16,9 +16,8 @@ void clearArray(int n) {
     }
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     bool first {true};
     std::ostringstream output;

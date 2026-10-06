@@ -38,9 +38,8 @@ bool hitWall(int x, int y, int direction) {
     return x + y == direction;
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     for (int i = 0; i < 60; ++i) {
         for (int j = 0; j < 60; ++j) {

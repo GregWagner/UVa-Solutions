@@ -4,9 +4,8 @@
 #include <iostream>
 #include <sstream>
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     int origCode[1000];
     int code[1000];

@@ -34,7 +34,7 @@ double evalCard(const std::string &s)
     return 0.5;
 }
 
-int main()
+auto main() -> int
 {
     std::ios::sync_with_stdio(false);
     std::ostringstream output;

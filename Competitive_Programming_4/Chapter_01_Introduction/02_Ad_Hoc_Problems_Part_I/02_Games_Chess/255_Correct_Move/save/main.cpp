@@ -95,7 +95,7 @@ void setupBlock(int k) {
     }
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(false);
     std::ostringstream output;
 

@@ -68,7 +68,7 @@ int detectHit(int x, int y, int &dir)
     return 0;
 }
 
-int main()
+auto main() -> int
 {
     std::ios::sync_with_stdio(false);
     std::ostringstream output;

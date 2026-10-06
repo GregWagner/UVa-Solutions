@@ -13,9 +13,8 @@ void addCorrectLetter(char c, std::string &correct) {
     correct += c;
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     std::ostringstream output;
     int round;

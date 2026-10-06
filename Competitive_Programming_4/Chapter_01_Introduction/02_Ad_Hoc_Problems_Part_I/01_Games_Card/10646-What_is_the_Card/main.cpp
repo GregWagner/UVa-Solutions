@@ -4,9 +4,8 @@
 #include <iostream>
 #include <sstream>
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     int test {};
     std::ostringstream output;

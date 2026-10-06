@@ -358,7 +358,7 @@ void checkBoard(int game, std::ostringstream &output)
     output << "Game #" << game << ": no king is in check.\n";
 }
 
-int main()
+auto main() -> int
 {
     std::ios::sync_with_stdio(false);
     std::ostringstream output;

@@ -125,9 +125,8 @@ void play_game() {
     }
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     while (deal_cards()) {
         play_game();

@@ -34,9 +34,8 @@ int king[][7] = {
     {10, 15, 15, 20, 20, 25, 25},
     {10, 15, 15, 20, 20, 25, 25}};
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     std::ostringstream output;
     int numberOfProblems;

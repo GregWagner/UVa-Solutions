@@ -138,9 +138,8 @@ int straight_flush(const std::vector<Card> &cards) {
     return 0;
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     std::ostringstream output;
     for (std::string input; std::getline(std::cin, input);) {

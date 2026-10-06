@@ -40,9 +40,8 @@ void deal_cards(int index) {
     }
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     std::ostringstream output;
     bool first = true;
