@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
 	float velocity, acceleration, time;
 	std::cin >> velocity >> acceleration >> time;
 

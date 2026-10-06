@@ -1,9 +1,7 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
 
     int height, width;
     while (std::cin >> height >> width) {

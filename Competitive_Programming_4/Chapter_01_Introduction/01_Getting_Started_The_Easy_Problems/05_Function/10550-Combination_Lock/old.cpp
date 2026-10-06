@@ -11,9 +11,8 @@ int countTicks(int a, int b) {
     return answer;
 }
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     const int DEGREES_PER_TICK {9};
     const int EXTRA_TURNS {1080};

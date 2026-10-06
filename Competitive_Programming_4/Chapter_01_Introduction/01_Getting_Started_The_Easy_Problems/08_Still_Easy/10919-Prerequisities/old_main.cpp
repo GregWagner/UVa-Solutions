@@ -6,7 +6,7 @@
 #include <sstream>
 #include <map>
 
-int main()
+auto main() -> int
 {
     std::ostringstream output;
     std::map<int, int> coursesTaken;

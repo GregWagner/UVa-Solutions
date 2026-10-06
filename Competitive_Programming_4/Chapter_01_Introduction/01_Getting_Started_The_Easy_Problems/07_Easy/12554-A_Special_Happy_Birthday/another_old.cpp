@@ -5,9 +5,8 @@
 #include <sstream>
 #include <vector>
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(0);
-    std::cin.tie(0);
 
     std::ostringstream output;
     std::string a[] = {"Happy", "birthday", "to", "you", "Happy", 

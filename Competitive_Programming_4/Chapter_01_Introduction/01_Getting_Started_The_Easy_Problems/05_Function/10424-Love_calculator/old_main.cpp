@@ -30,7 +30,7 @@ int calc(std::string name) {
     return results;
 }
 
-int main() {
+auto main() -> int {
     std::ostringstream output;
     output.precision(2);
     std::string first, second;

@@ -1,20 +1,18 @@
 #include <iostream>
 
-int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  std::cout.tie(nullptr);
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
 
-  int count{};
-  int numOfTemps{};
-  std::cin >> numOfTemps;
+    int count{};
+    int numOfTemps{};
+    std::cin >> numOfTemps;
 
-  while (numOfTemps--) {
-    int temp{};
-    std::cin >> temp;
-    if (temp < 0) {
-      ++count;
+    while (numOfTemps--) {
+        int temp{};
+        std::cin >> temp;
+        if (temp < 0) {
+            ++count;
+        }
     }
-  }
-  std::cout << count << '\n';
+    std::cout << count << '\n';
 }

@@ -3,9 +3,7 @@
 #include <vector>
 #include <algorithm>
 
-int main() {
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
+auto main() -> int {
     std::ios::sync_with_stdio(false);
 
     std::ostringstream output;

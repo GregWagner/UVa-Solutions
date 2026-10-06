@@ -1,24 +1,22 @@
 #include <iostream>
 
-int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  std::cout.tie(nullptr);
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
 
-  int n;
-  std::cin >> n;
-  int budget{};
-  while (n--) {
-    std::string name;
-    int cost;
-    std::cin >> name >> cost;
-    budget += cost;
-  }
-  if (budget == 0) {
-    std::cout << "Lagom\n";
-  } else if (budget < 0) {
-    std::cout << "Nekad\n";
-  } else {
-    std::cout << "Usch, vinst\n";
-  }
+    int n;
+    std::cin >> n;
+    int budget{};
+    while (n--) {
+        std::string name;
+        int cost;
+        std::cin >> name >> cost;
+        budget += cost;
+    }
+    if (budget == 0) {
+        std::cout << "Lagom\n";
+    } else if (budget < 0) {
+        std::cout << "Nekad\n";
+    } else {
+        std::cout << "Usch, vinst\n";
+    }
 }

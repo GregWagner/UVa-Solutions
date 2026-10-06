@@ -1,5 +1,5 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     std::cout << "TIL HAMINGJU MED AFMAELID FORRITUNARKEPPNI FRAMHALDSSKOLANNA!\n";
 }

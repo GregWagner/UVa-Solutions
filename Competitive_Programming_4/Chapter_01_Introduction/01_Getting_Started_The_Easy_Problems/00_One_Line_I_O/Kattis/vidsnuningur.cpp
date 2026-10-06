@@ -1,14 +1,12 @@
 #include <iostream>
 #include <algorithm>
 
-int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  std::cout.tie(nullptr);
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
 
-  std::string s;
-  std::cin >> s;
+    std::string s;
+    std::cin >> s;
 
-  std::reverse(s.begin(), s.end());
-  std::cout << s << '\n';
+    std::reverse(s.begin(), s.end());
+    std::cout << s << '\n';
 }

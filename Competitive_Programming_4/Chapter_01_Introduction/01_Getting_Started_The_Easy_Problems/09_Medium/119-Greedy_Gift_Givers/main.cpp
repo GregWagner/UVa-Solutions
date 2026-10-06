@@ -6,9 +6,8 @@
 #include <map>
 #include <vector>
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
 
     std::ostringstream output;
     bool first {true};

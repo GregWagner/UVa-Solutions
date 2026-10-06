@@ -4,9 +4,8 @@
 #include <iostream>
 #include <sstream>
 
-int main() {
+auto main() -> int {
     std::ios::sync_with_stdio();
-    std::cin.tie(0);
 
     std::ostringstream output;
     int participants;

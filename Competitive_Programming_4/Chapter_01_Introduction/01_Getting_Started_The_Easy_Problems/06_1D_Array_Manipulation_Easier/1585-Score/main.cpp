@@ -1,9 +1,8 @@
 #include <iostream>
 #include <sstream>
 
-int main() {
+auto main() -> int {
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(nullptr);
 
     std::ostringstream output;
     int testCases {};

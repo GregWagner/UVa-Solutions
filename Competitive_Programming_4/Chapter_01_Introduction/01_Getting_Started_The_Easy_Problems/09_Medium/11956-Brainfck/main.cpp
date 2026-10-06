@@ -5,7 +5,7 @@
 #include <sstream>
 #include <iomanip>
 
-int main() {
+auto main() -> int {
     signed short a[100];
     std::ios::sync_with_stdio(false);
     std::ostringstream output;

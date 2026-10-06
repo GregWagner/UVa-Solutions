@@ -1,13 +1,11 @@
 #include <iostream>
 #include <string>
 
-int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  std::cout.tie(nullptr);
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
 
-  std::string s = "Hipp hipp hurra!\n";
-  for (int i{}; i < 20 ; ++i) {
-    std::cout << s;
-  } 
+    std::string s = "Hipp hipp hurra!\n";
+    for (int i{}; i < 20 ; ++i) {
+        std::cout << s;
+    } 
 }

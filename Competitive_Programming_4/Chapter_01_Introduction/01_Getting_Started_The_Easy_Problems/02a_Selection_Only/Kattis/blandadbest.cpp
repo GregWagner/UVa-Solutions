@@ -1,17 +1,15 @@
 #include <iostream>
 
-int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  std::cout.tie(nullptr);
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
 
-  int n;
-  std::cin >> n;
-  if (n == 1) {
-    std::cout << "blandad best" << '\n';
-  } else {
-    std::string meat;
-    std::cin >> meat;
-    std::cout << meat << '\n';
-  }
+    int n;
+    std::cin >> n;
+    if (n == 1) {
+        std::cout << "blandad best" << '\n';
+    } else {
+        std::string meat;
+        std::cin >> meat;
+        std::cout << meat << '\n';
+    }
 }

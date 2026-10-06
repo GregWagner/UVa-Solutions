@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     std::string s;
     std::cin >> s;
     

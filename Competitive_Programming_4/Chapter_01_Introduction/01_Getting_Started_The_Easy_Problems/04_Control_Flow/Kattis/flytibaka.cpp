@@ -4,22 +4,20 @@
 #include <vector>
 
 
-int main() {
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  std::cout.tie(nullptr);
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
 
-  std::vector<std::vector<std::string>> a;
+    std::vector<std::vector<std::string>> a;
 
-  for (int line{}; line < 6; ++line) {
+    for (int line{}; line < 6; ++line) {
 
-  }
-  int n;
-  std::cin >> n;
+    }
+    int n;
+    std::cin >> n;
 
-  int sum{ 0 };
-  for (int i{ 1 }; i <= n; ++i) {
-    sum += i * i;
-  }
-  std::cout << sum << '\n';
+    int sum{ 0 };
+    for (int i{ 1 }; i <= n; ++i) {
+        sum += i * i;
+    }
+    std::cout << sum << '\n';
 }

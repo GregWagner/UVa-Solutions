@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 
-int main()
+auto main() -> int
 {
 	std::string names[110];
 	std::string song[] = {"Happy", "birthday" , "to", "you",
