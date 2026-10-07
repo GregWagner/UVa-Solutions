@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <sstream>
 
@@ -36,7 +37,7 @@ auto main() -> int {
         }
 
         while (!done) {
-            for (size_t i {}; i < start.size(); ++start) {
+            for (size_t i {}; i < start.size(); ++i) {
                 if (start[i] != end[i]) {
 
                 }

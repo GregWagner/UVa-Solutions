@@ -27,6 +27,7 @@
  * 2) Floor the sqrt
  */
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 #include <sstream>
 
