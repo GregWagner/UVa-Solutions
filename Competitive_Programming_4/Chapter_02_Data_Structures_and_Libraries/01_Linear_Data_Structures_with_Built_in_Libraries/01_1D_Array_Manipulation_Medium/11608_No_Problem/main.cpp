@@ -1,8 +1,7 @@
 #include <iostream>
 #include <sstream>
 
-int main() {
-    std::cin.tie(nullptr);
+auto main() -> int {
     std::ios::sync_with_stdio(false);
 
     std::ostringstream output;

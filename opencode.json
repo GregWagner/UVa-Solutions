@@ -15,7 +15,7 @@
     {
       "action": "shell",
       "resource": "*",
-      "effect": "ask"
+      "effect": "allow"
     },
 
     // Never allow OpenCode to push to a remote repository.
