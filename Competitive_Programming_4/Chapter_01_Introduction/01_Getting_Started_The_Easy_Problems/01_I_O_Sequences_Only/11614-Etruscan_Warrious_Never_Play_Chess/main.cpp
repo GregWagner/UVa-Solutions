@@ -1,8 +1,13 @@
 /*
  * This is an arithmentic sequence ?
+ * The total number of warriors required to completely fill n
+ * rows is given by the sum of the first n integers
+ * (the n-th triangular number):
+ *
  * n(n+1)
  * ------ = s
  *   2
+ *
  * n^2 + n = 2s
  * n^2 + n - 2s = 0
  *
@@ -42,7 +47,12 @@ auto main() -> int {
         uint64_t number_of_warriors {};
         std::cin >> number_of_warriors;
 
-        output << static_cast<int64_t>((-1 + std::sqrt(1 + 8 * number_of_warriors)) / 2) << '\n';
+        double warriors = static_cast<double>(number_of_warriors);
+        auto n = static_cast<uint64_t>((-1 + std::sqrt(1 + 8 * warriors)) / 2);
+        while (n * (n + 1) / 2 > number_of_warriors) { --n; }
+        while ((n + 1) * (n + 2) / 2 <= number_of_warriors) { ++n; }
+
+        output << n << '\n';
     }
 
     std::cout << output.str();
