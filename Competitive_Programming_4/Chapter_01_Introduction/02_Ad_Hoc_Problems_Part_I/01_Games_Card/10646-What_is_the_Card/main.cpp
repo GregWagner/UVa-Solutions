@@ -1,5 +1,5 @@
 /*
- * Problem 10315 - Poker Hands
+ * Problem 10315 - What is the card
  */
 #include <iostream>
 #include <sstream>
@@ -7,12 +7,12 @@
 auto main() -> int {
     std::ios::sync_with_stdio(0);
 
-    int test {};
+    int test{};
     std::ostringstream output;
     int testCases;
     std::cin >> testCases;
     while (testCases--) {
-        for (int i {}; i < 52; ++i) {
+        for (int i{}; i < 52; ++i) {
             std::string temp;
             std::cin >> temp;
             if (i == 32) {
