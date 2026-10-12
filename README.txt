@@ -1,12 +1,16 @@
 # UVa-Solutions
 
+note as of 10/11/26 there are 1,816,066 registered settlers 
+    there are 455,137 users that submitted at least 1 solution
+Goal for 10/12 is 140 problems which puts me under 9000.
+
 My Solutions to the UVa Online Judge
 
 
 1 gmw             2016-03-14       6,200     184      341  26% 11% 5% 0%  9% 3% 4% 0% 1%
 2 gmwJava         2019-02-10       7,534     159      288  22% 11% 4% 0% 13% 4% 2% 0% 0%
 3 GregWagnerMn    2020-02-21       8,955     139      332  30% 10% 3% 0%  3% 2% 0% 0% 0%
-4 gmwRetired	    2026-10-10      10,836     119      138  44%  0% 0% 0%  0% 0% 0% 0% 0%
+4 gmwRetired	    2026-10-10       9,906     128      149  44%  0% 0% 0%  0% 0% 0% 0% 0%
 5 GregFromMN      2022-01-05      13,435     100      121  34%  3% 0% 0%  0% 0% 0% 0% 0%
 6 gmwC            2021-06-11      18,216      75      121  25%  0% 0% 0%  0% 4% 0% 0% 0%
 7 GregWagner      2022-05-22      27,309      50       65  13%  0% 0% 0%  0% 0% 0% 0% 0%
@@ -17,7 +21,7 @@ gmwRetired	    2026-10-07      40,413      34       37  11%  0% 0% 0%  0% 0% 0% 
 gmwRetired	    2026-10-08      13,796      98      106  34%  0% 0% 0%  0% 0% 0% 0% 0% 27,617 places
 gmwRetired	    2026-10-09      12,452     106      123  39%  0% 0% 0%  0% 0% 0% 0% 0%  1,344 places
 gmwRetired	    2026-10-10      10,946     118      138  40%  0% 0% 0%  0% 0% 0% 0% 0%  1,506 places
-gmwRetired	    2026-10-11      10,946     118      138  40%  0% 0% 0%  0% 0% 0% 0% 0%  1,506 places
+gmwRetired	    2026-10-11       9,906     128      149  40%  0% 0% 0%  0% 0% 0% 0% 0%    952 places
 
 gmw Kattis              score       gmw         
 2025-03-20          36.5        39,443      

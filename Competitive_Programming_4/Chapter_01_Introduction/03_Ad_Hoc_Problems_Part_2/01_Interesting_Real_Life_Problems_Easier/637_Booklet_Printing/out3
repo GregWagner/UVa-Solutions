@@ -1,0 +1,36 @@
+Printing order for 13 pages:
+Sheet 1, front: Blank, 1
+Sheet 1, back : 2, Blank
+Sheet 2, front: Blank, 3
+Sheet 2, back : 4, 13
+Sheet 3, front: 12, 5
+Sheet 3, back : 6, 11
+Sheet 4, front: 10, 7
+Sheet 4, back : 8, 9
+Printing order for 18 pages:
+Sheet 1, front: Blank, 1
+Sheet 1, back : 2, Blank
+Sheet 2, front: 18, 3
+Sheet 2, back : 4, 17
+Sheet 3, front: 16, 5
+Sheet 3, back : 6, 15
+Sheet 4, front: 14, 7
+Sheet 4, back : 8, 13
+Sheet 5, front: 12, 9
+Sheet 5, back : 10, 11
+Printing order for 15 pages:
+Sheet 1, front: Blank, 1
+Sheet 1, back : 2, 15
+Sheet 2, front: 14, 3
+Sheet 2, back : 4, 13
+Sheet 3, front: 12, 5
+Sheet 3, back : 6, 11
+Sheet 4, front: 10, 7
+Sheet 4, back : 8, 9
+Printing order for 11 pages:
+Sheet 1, front: Blank, 1
+Sheet 1, back : 2, 11
+Sheet 2, front: 10, 3
+Sheet 2, back : 4, 9
+Sheet 3, front: 8, 5
+Sheet 3, back : 6, 7
