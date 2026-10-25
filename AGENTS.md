@@ -5,7 +5,7 @@ No build system, no tests, no CI: each solution is a self-contained program comp
 
 ## Solve/workflow rules (user preferences)
 
-- C++17 only; one self-contained source file per problem. No C++20+ unless explicitly requested.
+- C++11 only; one self-contained source file per problem. No C++20+ unless explicitly requested.
 - Read only stdin, write only stdout. Never print prompts, debug text, or extra labels. Match the expected
   output exactly — UVa/Judges penalize stray whitespace (PE) and trailing junk.
 - Standard fast-I/O preamble: `std::ios::sync_with_stdio(false); std::cin.tie(nullptr);`
@@ -22,7 +22,7 @@ No build system, no tests, no CI: each solution is a self-contained program comp
 Compile a single file directly, then run it with the problem's sample input:
 
 ```sh
-g++ -std=c++17 -Wall -Wextra -pedantic -O2 main.cpp -o main
+g++ -std=c++11 -Wall -Wextra -pedantic -O2 main.cpp -o main
 ./main < input          # then compare against the paired output / expected file
 ```
 
