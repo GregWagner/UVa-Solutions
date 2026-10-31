@@ -2,17 +2,17 @@
 need to solve 534 to give < 1,000 150 more
 need to solve 385 to give < 2,000  74 more
 need to solve 311 to give < 3,000  51 more
-need to solve 260 to give < 4,000  36 more
-need to solve 214 to give < 5,000  10 more (on hunt)
+need to solve 249 to give < 4,000  35 more (on hunt)
+need to solve 214 to give < 5,000   1 more (on hunt)
 
-Goal - be under 5,000 vy Oct 31
+Goal - be under 5,000 by Nov 7
 
 note as of 10/11/26 there are 1,816,066 registered settlers 
     there are 455,137 users that submitted at least 1 solution
 
 My Solutions to the UVa Online Judge
 
-1 gmwRetired	    2026-10-27       5,561     200      233  69%  6% 0% 0%  0% 0% 0% 0% 0%
+1 gmwRetired	    2026-10-27       4,973     214      248  74%  6% 0% 0%  0% 0% 0% 0% 0%
 2 gmw             2016-03-14       6,200     184      341  26% 11% 5% 0%  9% 3% 4% 0% 1%
 3 gmwJava         2019-02-10       7,534     159      288  22% 11% 4% 0% 13% 4% 2% 0% 0%
 4 GregWagnerMn    2020-02-21       8,955     139      332  30% 10% 3% 0%  3% 2% 0% 0% 0%
@@ -33,7 +33,7 @@ gmwRetired	    2026-10-26       7,709     156      181  58%  0% 0% 0%  0% 0% 0% 
 gmwRetired	    2026-10-27       6,942     169      200  63%  0% 0% 0%  0% 0% 0% 0% 0%     767 places
 gmwRetired	    2026-10-28       6,155     185      218  63%  6% 0% 0%  0% 0% 0% 0% 0%     787 places
 gmwRetired	    2026-10-29       5,561     200      234  69%  6% 0% 0%  0% 0% 0% 0% 0%     594 places
-gmwRetired	    2026-10-30       5,376     204      238  70%  6% 0% 0%  0% 0% 0% 0% 0%     594 places
+gmwRetired	    2026-10-30       4,973     214      248  74%  6% 0% 0%  0% 0% 0% 0% 0%     588 places
 
 gmw Kattis         score           gmw         
 2025-03-20          36.5        39,443      
