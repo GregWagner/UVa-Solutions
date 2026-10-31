@@ -1,0 +1,63 @@
+Expression: a + b
+    value = 3
+    a = 1
+    b = 2
+Expression: b - z
+    value = -24
+    b = 2
+    z = 26
+Expression: a+b--+c++
+    value = 6
+    a = 1
+    b = 1
+    c = 4
+Expression: c+f--+--a
+    value = 9
+    a = 0
+    c = 3
+    f = 5
+Expression: f-- + c-- + d-++e
+    value = 7
+    c = 2
+    d = 4
+    e = 6
+    f = 5
+Expression: a--+b--+c--+d--+e--+f--+g--+h--+i++-j++-k++-l++-m++-n++-o++-p++-q++-r++-s+t-u+v
+    value = -79
+    a = 0
+    b = 1
+    c = 2
+    d = 3
+    e = 4
+    f = 5
+    g = 6
+    h = 7
+    i = 10
+    j = 11
+    k = 12
+    l = 13
+    m = 14
+    n = 15
+    o = 16
+    p = 17
+    q = 18
+    r = 19
+    s = 19
+    t = 20
+    u = 21
+    v = 22
+Expression: --z+a--
+    value = 26
+    a = 0
+    z = 25
+Expression: a
+    value = 1
+    a = 1
+Expression: z 
+    value = 26
+    z = 26
+Expression: ++ x+--y+z++
+    value = 75
+    x = 25
+    y = 24
+    z = 27
