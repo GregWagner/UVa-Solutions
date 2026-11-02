@@ -1,0 +1,28 @@
+1980
+A 28 2 7 AAA
+A 28 2 6 BBB
+A 29 2 2 CCC
+A 29 2 2 DDD
+A 1 3 1 EEE
+A 1 3 2 FFF    '   
+A 1 3 3 GGG
+A 1 3 4 HHH
+A    1     3   5    III
+A    1     3   6    111   000
+A 1 3 7 JJJ
+A 2 3 4 LLL
+D 20 2
+D 21 2
+D 22 2
+D 23 2
+D 24 2
+D 25 2
+D 26 2
+D 27 2
+D 28 2
+D 29 2
+D 1 3
+D 2 3
+D 3 3
+#
+
