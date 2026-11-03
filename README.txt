@@ -1,19 +1,18 @@
 # UVa-Solutions
-need to solve 1,458 to give <   100
-need to solve   718 to give <   500 184 more
-need to solve   534 to give < 1,000 150 more
-need to solve   385 to give < 2,000  74 more
-need to solve   311 to give < 3,000  51 more
-need to solve   248 to give < 4,000   4 more (on hunt)
+need to solve 1,458 to give <   100 
+need to solve   718 to give <   500  184 more
+need to solve   534 to give < 1,000  150 more
+need to solve   385 to give < 2,000   74 more
+need to solve   301 to give < 3,000   33 more
 
-Goal - be under 4,000 by Nov 2
+Goal - be under 3,000 by Nov 7
 
 note as of 10/11/26 there are 1,816,066 registered settlers 
     there are 455,137 users that submitted at least 1 solution
 
 My Solutions to the UVa Online Judge
 
-1 gmwRetired	    2026-10-27       4,086     244      292  85%  6% 0% 0%  0% 0% 0% 0% 0%
+1 gmwRetired	    2026-10-27       3,559     268      323  84%  6% 0% 0%  0% 0% 0% 0% 0%
 2 gmw             2016-03-14       6,200     184      341  26% 11% 5% 0%  9% 3% 4% 0% 1%
 3 gmwJava         2019-02-10       7,534     159      288  22% 11% 4% 0% 13% 4% 2% 0% 0%
 4 GregWagnerMn    2020-02-21       8,955     139      332  30% 10% 3% 0%  3% 2% 0% 0% 0%
@@ -23,20 +22,6 @@ My Solutions to the UVa Online Judge
 8 Greg2024        2024-09-12      36,720      38       51  14%  0% 0% 0%  0% 0% 0% 0% 0%
 
 gmwRetired	    2024-03-03      42,888      31       33  11%  0% 0% 0%  0% 0% 0% 0% 0%
-gmwRetired	    2026-10-07      40,413      34       37  11%  0% 0% 0%  0% 0% 0% 0% 0%  2,475 places
-gmwRetired	    2026-10-08      13,796      98      106  34%  0% 0% 0%  0% 0% 0% 0% 0% 27,617 places
-gmwRetired	    2026-10-09      12,452     106      123  39%  0% 0% 0%  0% 0% 0% 0% 0%  1,344 places
-gmwRetired	    2026-10-10      10,946     118      138  40%  0% 0% 0%  0% 0% 0% 0% 0%  1,506 places
-gmwRetired	    2026-10-11       9,906     128      149  40%  0% 0% 0%  0% 0% 0% 0% 0%    952 places
-gmwRetired	    2026-10-12       8,529     144      166  50%  0% 0% 0%  0% 0% 0% 0% 0%   1,377 places
-gmwRetired	    2026-10-25       8,016     151      174  56%  0% 0% 0%  0% 0% 0% 0% 0%     513 places
-gmwRetired	    2026-10-26       7,709     156      181  58%  0% 0% 0%  0% 0% 0% 0% 0%     307 places
-gmwRetired	    2026-10-27       6,942     169      200  63%  0% 0% 0%  0% 0% 0% 0% 0%     767 places
-gmwRetired	    2026-10-28       6,155     185      218  63%  6% 0% 0%  0% 0% 0% 0% 0%     787 places
-gmwRetired	    2026-10-29       5,561     200      234  69%  6% 0% 0%  0% 0% 0% 0% 0%     594 places
-gmwRetired	    2026-10-30       4,973     214      248  74%  6% 0% 0%  0% 0% 0% 0% 0%     588 places
-gmwRetired	    2026-10-31       4,668     223      262  77%  6% 0% 0%  0% 0% 0% 0% 0%     305 places
-gmwRetired	    2026-11-01       4,085     244      292  84%  6% 0% 0%  0% 0% 0% 0% 0%     583 places
 
 gmw Kattis         score           gmw         
 2025-03-20          36.5        39,443      
@@ -52,7 +37,7 @@ Greg Wagner Kattis
 2025-04-01         416.9         2,342      
 2025-04-01         416.9         2,342      
 2025-04-04         417.9         2,327      
-
+2026-11-02         388.2         2,710
 From Paps
 Exercise 2.30
   3dprinter
