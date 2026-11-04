@@ -1,0 +1,65 @@
+14
+service.stateu.edu      10      tiny.stateu.edu
+*.a.com 0 b.b.com
+a.a.com 10 c.c.com
+d.d.com 100 b.b.com
+        10 a.com
+*.e.com 30 none.org
+        0 has.org
+e.e.com 50 ee.com
+        20 ee.ee.com
+*.w.v.net 100 100.mail.com
+*.v.net 50 50.mail.com
+small.cc 20 b.b.com
+         10 a.com
+service.stateu.edu      5       bigone.stateu.edu
+A service.stateu.edu
+D bigone.stateu.edu
+A a.com
+A a.a.com
+A c.c.com
+A d.d.com
+A e.e.com
+D has.org
+A e.e.com
+D a.com
+A d.d.com
+D ee.ee.com
+A e.e.com
+D none.org
+A e.e.com
+U a.com
+A d.d.com
+U none.org
+A e.e.com
+D none.org
+U ee.ee.com
+U has.org
+A e.e.com
+D has.org
+A e.e.com
+A aa.v.net
+A a.a.v.net
+A a.w.v.net
+D 50.mail.com
+A aa.v.net
+A a.a.v.net
+A a.w.v.net
+U a.com
+A small.cc
+D a.com
+D b.b.com
+A a.a.com
+D c.c.com
+A a.a.com
+A small.cc
+U b.b.com
+A small.cc
+A d.d.com
+U a.com
+A a.a.com
+A small.cc
+A d.d.com
+A service.stateu.edu
+X
+
