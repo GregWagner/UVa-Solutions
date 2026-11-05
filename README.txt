@@ -6,7 +6,6 @@ need to solve   385 to give < 2,000   74 more
 need to solve   301 to give < 3,000   18 more
 
 Goal - be under 3,000 by Nov 5
-        finish chapter 1 by 11/4
 
 note as of 10/11/26 there are 1,816,066 registered settlers 
     there are 455,137 users that submitted at least 1 solution
